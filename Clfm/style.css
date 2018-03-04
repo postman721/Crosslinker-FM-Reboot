@@ -1,8 +1,5 @@
-* {box-shadow: 0 0 2px #313131 inset;padding: 2px;}
-
-#filea * {background-color:#353535; color:#ffffff;}
 #filea *:focus{color:yellow;}
-#filea *:hover{color:#709bbd;}
+#filea *:hover{color:#2471a3;}
 
 #menu{background-color:#353535; color:#ffffff;}
 #filemenu{background-color:#4b4a4a; color:#ffffff}
@@ -10,9 +7,8 @@
 #renamer{background-color:#353535; color:#ffffff;}
 #renamer:focus{background-color:#b7b089; color:black;}
 
-.frame{background-color:#4b4a4a; color:#ffffff;}
 
-#vbox{background-color:#353535; color:#ffffff;}
+#vbox{background-color:#ccd1d1; color:#353535;}
 
 #button1:hover{color:#45460d;}
 #button2:hover{color:#45460d;}
