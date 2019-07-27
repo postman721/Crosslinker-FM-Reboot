@@ -7,11 +7,9 @@
 #renamer{background-color:#353535; color:#ffffff;}
 #renamer:focus{background-color:#b7b089; color:black;}
 
-
-#vbox{background-color:#ccd1d1; color:#353535;}
-
 #button1:hover{color:#45460d;}
 #button2:hover{color:#45460d;}
 
 #info * {background-color:#353535; color:#ffffff;}
 #about * {background-color:#353535; color:#ffffff;}
+#filea*{background-color:#4b4a4a; color:#ffffff}

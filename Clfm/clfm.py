@@ -47,7 +47,7 @@ class CrosslinkerFM(Gtk.ApplicationWindow):
         ev_state = ev.state & modifier_mask
         if ev.keyval == Gdk.KEY_d and ev_state == Gdk.ModifierType.CONTROL_MASK:
             self.sourcemove2.extend(self.filea.get_filenames())
-            print self.sourcemove2
+            print (self.sourcemove2)
             self.amount=len(self.sourcemove2) 
             self.indicator.set_text("Number of items waiting for actions: " + str(self.amount) + "   Clear with Esc.")
             basenamex=os.path.basename(str(self.sourcemove2))
@@ -72,7 +72,7 @@ class CrosslinkerFM(Gtk.ApplicationWindow):
     def rename_selects(self,widget):
         sourcemove=self.filea.get_filename()
         self.renamer.set_text(sourcemove)
-        print sourcemove
+        print (sourcemove)
    	    
     def actual_rename (self, widget, data=None):
         msg=("If an object with the same name is found on the rename destination it will be overwritten. Are you sure you want to continue?")
@@ -103,10 +103,10 @@ class CrosslinkerFM(Gtk.ApplicationWindow):
         destroy_dialog.destroy()                            
         if response == Gtk.ResponseType.OK:
             try:			
-		        movedest=self.filea.get_current_folder()
-		        os.chdir(movedest)
-		        for files in self.sourcemove2:
-				    shutil.move(files,movedest)
+                movedest=self.filea.get_current_folder()
+                os.chdir(movedest)
+                for files in self.sourcemove2:
+                    shutil.move(files,movedest)
             except Exception as e:
                 print("Error. Object with a similar name in path.")
                 self.indicator.set_text("Error. Object with a similar name in path.")
@@ -120,7 +120,7 @@ class CrosslinkerFM(Gtk.ApplicationWindow):
 #TRASH & DELETE FUNCTIONS
 #############################
     def delete_list_of_files(self,widget):
-		del self.sourcemove2[:]
+        del self.sourcemove2[:]
     
     def maketrash(self,widget):
         name=getpass.getuser()
@@ -153,7 +153,7 @@ class CrosslinkerFM(Gtk.ApplicationWindow):
                 combinex=uhome + name + trash
                 sourcemovex=(self.filea.get_filenames())
                 for files in sourcemovex:
-				    shutil.move(files, combinex)
+                    shutil.move(files, combinex)
             except Exception as e:
                 print("Error. Object with a similar name in trash.")
                 self.indicator.set_text("Error. Object with a similar name in trash.")        
@@ -196,18 +196,16 @@ class CrosslinkerFM(Gtk.ApplicationWindow):
 #################################
 #Make new directory
     def newdir(self,widget):
-		foldername=self.filea.get_current_folder()
-		os.chdir(foldername)
-		makefolder=os.makedirs('Newfolder')
-		print os.getcwd()
-		makefolder           
+        foldername=self.filea.get_current_folder()
+        os.chdir(foldername)
+        makefolder=os.makedirs('Newfolder')
+        makefolder           
 
 #Make new empty text file
     def newfile(self,widget):
         foldername=self.filea.get_current_folder()
         os.chdir(foldername)
         newtext=os.mknod('Newtext.txt')
-        print os.getcwd()
         newtext
 ##########################
 #DELETE FUNCTIONS
@@ -267,7 +265,7 @@ class CrosslinkerFM(Gtk.ApplicationWindow):
 ###########################################################    
     def addressnow(self,widget):    
         current=self.filea.get_current_folder()
-        print current
+        print (current)
         self.renamer.set_text(current)
 ###########################################################
 #TERMINAL FUNCTIONS.
