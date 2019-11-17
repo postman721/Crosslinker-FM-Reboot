@@ -1,7 +1,7 @@
 # Crosslinker-FM-Reboot
 Gtk file manager for Linux/Unix
 
-![clfm](https://user-images.githubusercontent.com/29865797/36945860-006a7dbc-1fac-11e8-8fbc-251426dd502a.jpg)
+![screen](https://user-images.githubusercontent.com/29865797/69012725-9d237800-0981-11ea-98a0-1502bc545768.jpg)
 <p>Crosslinker FM Reboot version brings new features and new outlook. File manager remains lightweight and contains about 535 lines of mostly redesigned code.</p>
 
 ____________________
