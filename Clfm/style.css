@@ -1,15 +1,9 @@
-#filea *:focus{color:yellow;}
-#filea *:hover{color:#2471a3;}
+*{background-color:#dcdcdc; color:black;}
+*:focus{background-color:#dcdcdc; color:black;}
+*:hover{background-color:#2A4E6E; color:black;}
+#info*{background-color:#dcdcdc; color:black;}
+#about*{background-color:#dcdcdc; color:black;}
+#renamer{background-color:#393a36; color:white;}
+#scrolled{background-color:#393a36; color:white;}
 
-#menu{background-color:#353535; color:#ffffff;}
-#filemenu{background-color:#4b4a4a; color:#ffffff}
 
-#renamer{background-color:#353535; color:#ffffff;}
-#renamer:focus{background-color:#b7b089; color:black;}
-
-#button1:hover{color:#45460d;}
-#button2:hover{color:#45460d;}
-
-#info * {background-color:#353535; color:#ffffff;}
-#about * {background-color:#353535; color:#ffffff;}
-#filea*{background-color:#4b4a4a; color:#ffffff}
